@@ -1,4 +1,6 @@
 import React from "react";
+import Framework from "../../components/Framework";
+import { frameworks, userInfo } from "../../mockApi";
 
 class About extends React.Component {
   render() {
@@ -29,36 +31,14 @@ class About extends React.Component {
                   data-wow-duration="0.8s"
                   data-wow-delay="0.2s"
                 >
-                  Victor Mutai is a self-motivated and goal oriented individual with the ability to follow through with projects from inception to completion using analytical and problem-solving skills.
+                  {userInfo.bio}
                 </p>
                 <div
                   className="mh-about-tag wow fadeInUp"
                   data-wow-duration="0.8s"
                   data-wow-delay="0.3s"
                 >
-                  <ul>
-                    <li>
-                      <span>php</span>
-                    </li>
-                    <li>
-                      <span>html</span>
-                    </li>
-                    <li>
-                      <span>css</span>
-                    </li>
-                    <li>
-                      <span>php</span>
-                    </li>
-                    <li>
-                      <span>wordpress</span>
-                    </li>
-                    <li>
-                      <span>React</span>
-                    </li>
-                    <li>
-                      <span>Javascript</span>
-                    </li>
-                  </ul>
+                  <Framework frameworks={frameworks} />
                 </div>
                 <a
                   href="https://resume.github.io/?victorjambo/"
@@ -68,7 +48,7 @@ class About extends React.Component {
                   data-wow-delay="0.4s"
                   target="_blank"
                 >
-                  Github Portfolio <i className="fa fa-github" />
+                  Github Profile <i className="fa fa-github" />
                 </a>
               </div>
             </div>

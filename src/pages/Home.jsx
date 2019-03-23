@@ -1,5 +1,6 @@
 import React from "react";
 import SocialIcons from "../components/SocialIcons";
+import { userInfo } from "../mockApi";
 
 class Home extends React.Component {
   render() {
@@ -30,7 +31,7 @@ class Home extends React.Component {
                     data-wow-duration="0.8s"
                     data-wow-delay="0.3s"
                   >
-                    Software Engineer
+                    {userInfo.title}
                   </h4>
 
                   <ul>
@@ -40,7 +41,7 @@ class Home extends React.Component {
                       data-wow-delay="0.4s"
                     >
                       <i className="fa fa-envelope" />
-                      <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=victor.mutai@andela.com">victor.mutai@andela.com</a>
+                      <a href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${userInfo.email}`}>{userInfo.email}</a>
                     </li>
                     <li
                       className="wow fadeInUp"
@@ -48,7 +49,7 @@ class Home extends React.Component {
                       data-wow-delay="0.5s"
                     >
                       <i className="fa fa-phone" />
-                      <a href="callto:">+254 729 021 209</a>
+                      <a href="callto:">{userInfo.phone}</a>
                     </li>
                     <li
                       className="wow fadeInUp"
@@ -57,7 +58,7 @@ class Home extends React.Component {
                     >
                       <i className="fa fa-map-marker" />
                       <address>
-                        Nairobi, Kenya
+                        {userInfo.address}
                       </address>
                     </li>
                   </ul>
@@ -78,8 +79,8 @@ class Home extends React.Component {
                 >
                   <div className="img-border">
                     <img
-                      src="https://storage.googleapis.com/hof-gallery/VictorMutai_2e7c79ccd-b1ca-449f-b4b3-32d249babf57.jpg"
-                      alt=""
+                      src={userInfo.pic}
+                      alt={userInfo.email}
                       className="img-fluid"
                     />
                   </div>
