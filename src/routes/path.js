@@ -1,5 +1,5 @@
 export default {
   root: '/',
-  admin: '/admin',
-  login: '/login'
+  login: '/login',
+  settings: '/settings'
 };

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Root from './routes/Root';
+import Routes from './routes';
 
 class App extends Component {
   render() {
-    return (
-      <Root />
-    );
+    return (<Routes />);
   }
 }
 

@@ -21,7 +21,8 @@ module.exports = {
     "arrow-body-style": [2, "as-needed"],
     "no-restricted-globals": ["off", "history"],
     "react/prefer-stateless-function": "off",
-    "react/no-danger": "off"
+    "react/no-danger": "off",
+    "jsx-a11y/label-has-for": "off"
   },
   "env": {
     "browser": true

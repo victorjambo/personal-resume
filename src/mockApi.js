@@ -71,6 +71,7 @@ export const userInfo = {
   email: 'victor.mutai@andela.com',
   phone: '+254 729 021 209',
   title: 'Software Engineer',
+  name: 'Victor Mutai',
   bio: 'Victor Mutai is a self-motivated and goal oriented individual with the ability to follow through with projects from inception to completion using analytical and problem-solving skills.'
 };
 
