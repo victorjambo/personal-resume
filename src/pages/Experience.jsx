@@ -13,7 +13,7 @@ class Experience extends React.Component {
         {' '}
         <a href="/">{experience.company}</a>
       </h4>
-      <div className="mh-eduyear">{experience.company}</div>
+      <div className="mh-eduyear">{experience.timeline}</div>
       <div className="timeline-post-content" dangerouslySetInnerHTML={{ __html: experience.description }} />
     </div>
   ));
