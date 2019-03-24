@@ -23,7 +23,7 @@ export const technicalSkills = [
     id: 5,
     stack: 'IOS',
     level: '5%'
-  },
+  }
 ];
 
 export const softSkills = [
@@ -62,7 +62,7 @@ export const stacks = [
     id: 3,
     title: 'App Development',
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-  },
+  }
 ];
 
 export const userInfo = {
@@ -81,7 +81,7 @@ export const stories = {
       title: 'Software Engineer',
       timeline: 'May 2018 – Present • 11 mos',
       company: 'Andela',
-      description: `Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires.`
+      description: 'Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela\'s partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires.'
     },
     {
       id: 3,
@@ -130,7 +130,7 @@ export const stories = {
       <li>Providing training and support to users for applications.</li>
       <li>Ensuring the security and integrity of all program systems and data.</li>
       </ul>`
-    },
+    }
   ],
   studies: [
     {

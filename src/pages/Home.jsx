@@ -1,6 +1,6 @@
-import React from "react";
-import SocialIcons from "../components/SocialIcons";
-import { userInfo } from "../mockApi";
+import React from 'react';
+import SocialIcons from '../components/SocialIcons';
+import { userInfo } from '../mockApi';
 
 class Home extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class Home extends React.Component {
                     data-wow-duration="0.8s"
                     data-wow-delay="0.1s"
                   >
-                    <span>Hello I'm</span>
+                    <span>Hello I&#39;m</span>
                   </div>
 
                   <h2
@@ -41,7 +41,13 @@ class Home extends React.Component {
                       data-wow-delay="0.4s"
                     >
                       <i className="fa fa-envelope" />
-                      <a href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${userInfo.email}`}>{userInfo.email}</a>
+                      <a
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${userInfo.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {userInfo.email}
+                      </a>
                     </li>
                     <li
                       className="wow fadeInUp"
@@ -69,7 +75,7 @@ class Home extends React.Component {
                     data-wow-delay="0.7s"
                   />
 
-                  </div>
+                </div>
               </div>
               <div className="col-sm-6">
                 <div

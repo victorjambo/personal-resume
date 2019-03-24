@@ -1,6 +1,6 @@
-import React from "react";
-import Stack from "../../components/Stack";
-import { stacks } from "../../mockApi";
+import React from 'react';
+import Stack from '../../components/Stack';
+import { stacks } from '../../mockApi';
 
 class Service extends React.Component {
   render() {

@@ -1,23 +1,22 @@
-import React from "react";
-import { stories } from "../mockApi";
+import React from 'react';
+import { stories } from '../mockApi';
 
 class Experience extends React.Component {
-
-  timelineItems = (experiences) => {
-    return experiences.map(experience => (
-      <div
-        className="mh-work-item dark-bg wow fadeInUp"
-        data-wow-duration="0.8s"
-        data-wow-delay="0.4s"
-      >
-        <h4>
-          {experience.title} <a href="/">{experience.company}</a>
-        </h4>
-        <div className="mh-eduyear">{experience.company}</div>
-        <div className="timeline-post-content" dangerouslySetInnerHTML={{__html: experience.description}} />
-      </div>
-    ));
-  };
+  timelineItems = experiences => experiences.map(experience => (
+    <div
+      className="mh-work-item dark-bg wow fadeInUp"
+      data-wow-duration="0.8s"
+      data-wow-delay="0.4s"
+    >
+      <h4>
+        {experience.title}
+        {' '}
+        <a href="/">{experience.company}</a>
+      </h4>
+      <div className="mh-eduyear">{experience.company}</div>
+      <div className="timeline-post-content" dangerouslySetInnerHTML={{ __html: experience.description }} />
+    </div>
+  ));
 
   render() {
     return (

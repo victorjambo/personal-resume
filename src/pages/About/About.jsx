@@ -1,6 +1,6 @@
-import React from "react";
-import Framework from "../../components/Framework";
-import { frameworks, userInfo } from "../../mockApi";
+import React from 'react';
+import Framework from '../../components/Framework';
+import { frameworks, userInfo } from '../../mockApi';
 
 class About extends React.Component {
   render() {
@@ -48,7 +48,9 @@ class About extends React.Component {
                   data-wow-delay="0.4s"
                   target="_blank"
                 >
-                  Github Profile <i className="fa fa-github" />
+                  Github Profile
+                  {' '}
+                  <i className="fa fa-github" />
                 </a>
               </div>
             </div>

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const SocialIcons = (props) => (
+const SocialIcons = props => (
   <ul {...props}>
     <li>
       <a

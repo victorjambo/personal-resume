@@ -1,42 +1,39 @@
-import React from "react";
-import { stories } from "../mockApi";
+import React from 'react';
+import { stories } from '../mockApi';
 
 class Timeline extends React.Component {
-
   getClass = (id, length) => {
     if (length === 1) {
       return 'left';
-    };
+    }
     if (id % 2 === 0) {
       return 'left';
-    };
+    }
     return 'right';
   }
 
-  timelineItems = (experiences) => {
-    return experiences.map(experience => (
-      <div
-        className={`timeline-post wow fadeInUp timeline-post-${this.getClass(experience.id, experiences.length)}`}
-        data-wow-duration="0.8s"
-        data-wow-delay="0.3s"
-        key={experience.id}
-      >
-        <div className="timeline-post-content-holder">
-          <div className="timeline-post-icon" />
-          <div className="timeline-post-title">
-            <h4>{experience.title}</h4>
-          </div>
-          <div className="timeline-post-subtitle">
-            <p>
-              <span>{experience.company}</span>
-              <span className="timeline-duration">{experience.timeline}</span>
-            </p>
-          </div>
-          <div className="timeline-post-content" dangerouslySetInnerHTML={{__html: experience.description}} />
+  timelineItems = experiences => experiences.map(experience => (
+    <div
+      className={`timeline-post wow fadeInUp timeline-post-${this.getClass(experience.id, experiences.length)}`}
+      data-wow-duration="0.8s"
+      data-wow-delay="0.3s"
+      key={experience.id}
+    >
+      <div className="timeline-post-content-holder">
+        <div className="timeline-post-icon" />
+        <div className="timeline-post-title">
+          <h4>{experience.title}</h4>
         </div>
+        <div className="timeline-post-subtitle">
+          <p>
+            <span>{experience.company}</span>
+            <span className="timeline-duration">{experience.timeline}</span>
+          </p>
+        </div>
+        <div className="timeline-post-content" dangerouslySetInnerHTML={{ __html: experience.description }} />
       </div>
-    ));
-  };
+    </div>
+  ));
 
   render() {
     return (
@@ -89,8 +86,8 @@ class Timeline extends React.Component {
 
                   <div className="timeline-end-icon">
                     <span>
-                      {" "}
-                      <div class="iconspace"><i className="fa fa-circle" /></div>
+                      {' '}
+                      <div className="iconspace"><i className="fa fa-circle" /></div>
                     </span>
                   </div>
                 </div>

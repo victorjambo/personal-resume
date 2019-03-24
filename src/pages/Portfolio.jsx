@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Portfolio extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class Portfolio extends React.Component {
                     data-wow-duration="0.8s"
                     data-wow-delay="0.1s"
                   >
-                    {" "}
+                    {' '}
                     <span>All Categories</span>
                   </li>
                   <li

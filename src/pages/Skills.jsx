@@ -1,7 +1,7 @@
-import React from "react";
-import TechnicalSkills from "../components/TechnicalSkills";
-import { technicalSkills, softSkills } from "../mockApi";
-import SoftSkills from "../components/SoftSkills";
+import React from 'react';
+import TechnicalSkills from '../components/TechnicalSkills';
+import { technicalSkills, softSkills } from '../mockApi';
+import SoftSkills from '../components/SoftSkills';
 
 class Skills extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class Skills extends React.Component {
                     data-wow-delay="0.3s"
                   >
                     <h3>Technical Skills</h3>
-                    <TechnicalSkills skills={technicalSkills}/>
+                    <TechnicalSkills skills={technicalSkills} />
                   </div>
                 </div>
               </div>
@@ -33,7 +33,7 @@ class Skills extends React.Component {
                   data-wow-delay="0.5s"
                 >
                   <h3>Soft Skills</h3>
-                  <SoftSkills skills={softSkills}/>
+                  <SoftSkills skills={softSkills} />
                 </div>
               </div>
             </div>

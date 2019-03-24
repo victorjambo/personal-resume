@@ -1,7 +1,7 @@
-import React from "react";
-import SocialIcons from "../components/SocialIcons";
-import { userInfo } from "../mockApi";
-import ContactForm from "../components/ContactForm";
+import React from 'react';
+import SocialIcons from '../components/SocialIcons';
+import { userInfo } from '../mockApi';
+import ContactForm from '../components/ContactForm';
 
 class Footer extends React.Component {
   render() {
@@ -79,11 +79,15 @@ class Footer extends React.Component {
                     <div className="row">
                       <div className="col-sm-6">
                         <div className="text-left text-xs-center">
-                          <p>Made with <span role="img" aria-label="hearts">💚</span></p>
+                          <p>
+                            Made with
+                            {' '}
+                            <span role="img" aria-label="hearts">💚</span>
+                          </p>
                         </div>
                       </div>
                       <div className="col-sm-6">
-                        <SocialIcons className="social-icon"/>
+                        <SocialIcons className="social-icon" />
                       </div>
                     </div>
                   </div>

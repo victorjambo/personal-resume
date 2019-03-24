@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 const Stack = ({ stacks }) => {
-  const icons = ['fa-bullseye', 'fa-code', 'fa-object-ungroup']
-  const colors = ['purple-color', 'iron-color', 'sky-color']
+  const icons = ['fa-bullseye', 'fa-code', 'fa-object-ungroup'];
+  const colors = ['purple-color', 'iron-color', 'sky-color'];
 
-  return stacks.map(stack => {
+  return stacks.map((stack) => {
     const icon = icons[Math.floor(Math.random() * icons.length)];
     const color = colors[Math.floor(Math.random() * colors.length)];
     return (
@@ -19,7 +19,7 @@ const Stack = ({ stacks }) => {
           <p>{stack.description}</p>
         </div>
       </div>
-    )
+    );
   });
 };
 

@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const TechnicalSkills = ({skills}) => {
+const TechnicalSkills = ({ skills }) => {
   const items = skills.map(skill => (
-    <div className="candidatos" key={skill+Math.random()}>
+    <div className="candidatos" key={skill + Math.random()}>
       <div className="parcial">
         <div className="info">
           <div className="nome">{skill.stack}</div>
@@ -13,11 +14,16 @@ const TechnicalSkills = ({skills}) => {
         </div>
       </div>
     </div>
-  ))
+  ));
   return (
-  <div className="each-skills">
-    {items}
-  </div>
-)};
+    <div className="each-skills">
+      {items}
+    </div>
+  );
+};
+
+TechnicalSkills.propTypes = {
+  skills: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
 export default TechnicalSkills;
