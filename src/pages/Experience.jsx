@@ -7,6 +7,7 @@ class Experience extends React.Component {
       className="mh-work-item dark-bg wow fadeInUp"
       data-wow-duration="0.8s"
       data-wow-delay="0.4s"
+      key={experience.id}
     >
       <h4>
         {experience.title}

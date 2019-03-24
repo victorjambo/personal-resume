@@ -22,5 +22,8 @@ module.exports = {
     "no-restricted-globals": ["off", "history"],
     "react/prefer-stateless-function": "off",
     "react/no-danger": "off"
+  },
+  "env": {
+    "browser": true
   }
 };
