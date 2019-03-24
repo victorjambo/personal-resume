@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
+import firebase from 'firebase/app';
 
 import Navbar from './common/Navbar';
 import Footer from './common/Footer';
@@ -11,9 +12,14 @@ import Portfolio from './pages/Portfolio';
 import Timeline from './pages/Timeline';
 import Experience from './pages/Experience';
 
-import './App.css';
+import config from './config/firebase';
 
 class App extends Component {
+  componentWillMount() {
+    const firebaseApp = firebase.initializeApp(config);
+    console.log(firebaseApp);
+  }
+
   render() {
     return (
       <BreakpointProvider>
