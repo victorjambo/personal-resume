@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
-import firebase from 'firebase/app';
 
 import Navbar from '../common/Navbar';
 import Footer from '../common/Footer';
@@ -12,28 +11,48 @@ import Portfolio from './Portfolio';
 import Timeline from './Timeline';
 import Experience from './Experience';
 
-import config from '../config/firebase';
+import Firebase from '../helper/firebase';
 
 class Dashboard extends Component {
-  componentWillMount() {
-    const firebaseApp = firebase.initializeApp(config);
-    console.log(firebaseApp.options);
+  state = {
+    frameworks: [],
+    userInfo: {}
+  }
+
+  firebase = new Firebase();
+
+  componentDidMount() {
+    this.firebase.database.on('value', (snapshot) => {
+      const { frameworks, userInfo } = snapshot.val();
+      this.setState({
+        frameworks,
+        userInfo
+      });
+      console.log(this.state);
+    }, (error) => {
+      console.log(error.code);
+    });
   }
 
   render() {
+    const { userInfo } = this.state;
     return (
       <BreakpointProvider>
-        <Navbar />
-
-        <Home />
-        <About />
-        <Service />
-        <Skills />
-        <Breakpoint small down><Experience /></Breakpoint>
-        <Breakpoint medium up><Timeline /></Breakpoint>
-        <Portfolio />
-
-        <Footer />
+        { userInfo.name ? (
+          <React.Fragment>
+            <Navbar />
+            <Home />
+            <About />
+            <Service />
+            <Skills />
+            <Breakpoint small down><Experience /></Breakpoint>
+            <Breakpoint medium up><Timeline /></Breakpoint>
+            <Portfolio />
+            <Footer />
+          </React.Fragment>
+        ) : (
+          <div>Loading...</div>
+        )}
       </BreakpointProvider>
     );
   }
