@@ -81,7 +81,8 @@ const Footer = ({ userInfo }) => (
                       <p>
                         Made with
                         {' '}
-                        <span role="img" aria-label="hearts">💚</span>
+                        <img className="footer-icons reactjs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/64px-React-icon.svg.png" alt="" />
+                        <img className="footer-icons firebase" src="https://img.icons8.com/color/48/000000/firebase.png" alt="" />
                       </p>
                     </div>
                   </div>

@@ -67,11 +67,11 @@ class Navbar extends React.Component {
                       Experience
                     </a>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link" href="#mh-portfolio">
                       Portfolio
                     </a>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <a className="nav-link" href="#mh-contact">
                       Contact
