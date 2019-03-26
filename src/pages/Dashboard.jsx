@@ -7,52 +7,38 @@ import Home from './Home';
 import About from './About/About';
 import Service from './About/Service';
 import Skills from './Skills';
-import Portfolio from './Portfolio';
 import Timeline from './Timeline';
 import Experience from './Experience';
 
 import Firebase from '../helper/firebase';
+import mockApi from '../mockApi';
 
 class Dashboard extends Component {
-  state = {
-    frameworks: [],
-    userInfo: {}
-  }
+  state = { ...mockApi }
 
   firebase = new Firebase();
 
-  componentDidMount() {
-    this.firebase.database.on('value', (snapshot) => {
-      const { frameworks, userInfo } = snapshot.val();
-      this.setState({
-        frameworks,
-        userInfo
-      });
-      console.log(this.state);
-    }, (error) => {
-      console.log(error.code);
-    });
-  }
+  // componentDidMount() {
+  //   this.firebase.database.on('value', (snapshot) => {
+  //     this.setState({ ...snapshot.val() });
+  //   });
+  // }
 
   render() {
-    const { userInfo } = this.state;
+    const {
+      frameworks, softSkills, stacks, stories, technicalSkills, userInfo
+    } = this.state;
     return (
       <BreakpointProvider>
-        { userInfo.name ? (
-          <React.Fragment>
-            <Navbar />
-            <Home />
-            <About />
-            <Service />
-            <Skills />
-            <Breakpoint small down><Experience /></Breakpoint>
-            <Breakpoint medium up><Timeline /></Breakpoint>
-            <Portfolio />
-            <Footer />
-          </React.Fragment>
-        ) : (
-          <div>Loading...</div>
-        )}
+        <Navbar />
+        <Home userInfo={userInfo} />
+        <About userInfo={userInfo} frameworks={frameworks} />
+        <Service stacks={stacks} />
+        <Skills technicalSkills={technicalSkills} softSkills={softSkills} />
+        <Breakpoint small down><Experience stories={stories} /></Breakpoint>
+        <Breakpoint medium up><Timeline stories={stories} /></Breakpoint>
+        {/* <Portfolio /> */}
+        <Footer userInfo={userInfo} />
       </BreakpointProvider>
     );
   }

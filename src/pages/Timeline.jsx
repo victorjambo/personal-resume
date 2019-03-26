@@ -1,5 +1,5 @@
 import React from 'react';
-import { stories } from '../mockApi';
+import PropTypes from 'prop-types';
 
 class Timeline extends React.Component {
   getClass = (id, length) => {
@@ -36,6 +36,7 @@ class Timeline extends React.Component {
   ));
 
   render() {
+    const { stories } = this.props;
     return (
       <section
         id="mh-experience"
@@ -99,5 +100,9 @@ class Timeline extends React.Component {
     );
   }
 }
+
+Timeline.propTypes = {
+  stories: PropTypes.objectOf(PropTypes.array).isRequired
+};
 
 export default Timeline;
