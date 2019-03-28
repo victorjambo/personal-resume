@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
+import { ToastContainer } from 'react-toastify';
 
 import Navbar from '../common/Navbar';
 import Footer from '../common/Footer';
@@ -10,13 +11,13 @@ import Skills from './Skills';
 import Timeline from './Timeline';
 import Experience from './Experience';
 
-import Firebase from '../helper/firebase';
 import mockApi from '../mockApi';
+// import Firebase from '../helper/firebase';
 
 class Dashboard extends Component {
   state = { ...mockApi }
 
-  firebase = new Firebase();
+  // firebase = new Firebase();
 
   // componentDidMount() {
   //   this.firebase.database.on('value', (snapshot) => {
@@ -30,6 +31,7 @@ class Dashboard extends Component {
     } = this.state;
     return (
       <BreakpointProvider>
+        <ToastContainer />
         <Navbar />
         <Home userInfo={userInfo} />
         <About userInfo={userInfo} frameworks={frameworks} />
