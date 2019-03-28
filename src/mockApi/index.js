@@ -2,28 +2,28 @@ export default {
   technicalSkills: [
     {
       id: 1,
-      stack: 'Javascript',
-      level: '86%'
+      stack: 'Python/Flask',
+      level: '95%'
     },
     {
       id: 2,
-      stack: 'Java',
-      level: '46%'
+      stack: 'Python/Django',
+      level: '86%'
     },
     {
       id: 3,
-      stack: 'Python',
-      level: '38%'
+      stack: 'Javascript/ReactJS',
+      level: '70%'
     },
     {
       id: 4,
-      stack: 'PHP',
-      level: '17%'
+      stack: 'Javascript/VanillaJS',
+      level: '70%'
     },
     {
       id: 5,
-      stack: 'IOS',
-      level: '5%'
+      stack: 'HTML&CSS',
+      level: '60%'
     }
   ],
   softSkills: [
@@ -32,37 +32,34 @@ export default {
       level: 95
     },
     {
-      attribute: 'Team Work',
-      level: 55
+      attribute: 'Team Intergration',
+      level: 90
     },
     {
-      attribute: 'Project Management',
+      attribute: 'Professionalism',
       level: 86
     },
     {
-      attribute: 'Creativity',
-      level: 60
+      attribute: 'Project Management',
+      level: 55
     }
   ],
-  frameworks: ['php', 'html', 'css', 'wordpress', 'React', 'Javascript'],
+  frameworks: ['Python', 'Django', 'Flask', 'HTML', 'CSS', 'ReactJS', 'Vanilla JS'],
   stacks: [
     {
       id: 1,
-      title: 'UI Design',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+      title: 'API Development',
+      description: 'Proficient in builing robust and scalable REST APIs. Skilled in building APIs and web backend with python Django & Flask. Currently leveling up on building backend APIs with GraphQL.'
     },
     {
       id: 2,
       title: 'Web Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+      description: 'Proficient in building professional web frontend with top frameworks like ReactJS and VanillaJS. Currently leveling up on AngularJS'
     },
     {
       id: 3,
-      title: 'App Development',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+      title: 'UI Design',
+      description: 'Using the best design tools like Invision, AdobeXD, and Sketch to deliver the best UI design.'
     }
   ],
   userInfo: {

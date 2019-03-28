@@ -47,6 +47,15 @@ const SocialIcons = props => (
         <i className="fa fa-linkedin" />
       </a>
     </li>
+    <li>
+      <a
+        href="https://medium.com/@victorjambo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa fa-medium" />
+      </a>
+    </li>
   </ul>
 );
 
