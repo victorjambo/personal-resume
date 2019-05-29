@@ -9,6 +9,7 @@
     "firebase": "^5.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
+    "react-async-script-loader": "^0.3.0",
     "react-dom": "^16.8.4",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",

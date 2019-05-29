@@ -13,7 +13,7 @@ const Footer = ({ userInfo }) => (
           data-wow-duration="0.8s"
           data-wow-delay="0.2s"
         >
-          <h3>Contact Me</h3>
+          <h3>Say Hello</h3>
         </div>
         <div className="map-image image-bg col-sm-12">
           <div className="container mt-30">
