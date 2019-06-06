@@ -1,18 +1,17 @@
-import firebase from 'firebase';
-import config from '../config/firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/functions';
 
-class Firebase {
-  constructor() {
-    this.app = firebase.initializeApp(config);
+const config = {
+  apiKey: 'AIzaSyBmEKmKa4d2m_aqya8nH_45FkdQqb7-KQI',
+  authDomain: 'personal-resume-f81c4.firebaseapp.com',
+  databaseURL: 'https://personal-resume-f81c4.firebaseio.com',
+  projectId: 'personal-resume-f81c4',
+  storageBucket: 'personal-resume-f81c4.appspot.com',
+  messagingSenderId: '1005730961132',
+  appId: '1:1005730961132:web:8cae6f664ed66144'
+};
 
-    this.auth = this.app.auth();
+firebase.initializeApp(config);
 
-    this.database = firebase.database().ref();
-
-    this.googleProvider = new firebase.auth.GoogleAuthProvider();
-  }
-
-  doSignInWithGoogle = () => this.auth.signInWithPopup(this.googleProvider);
-}
-
-export default Firebase;
+export default firebase;

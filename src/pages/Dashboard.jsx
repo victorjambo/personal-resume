@@ -12,18 +12,9 @@ import Timeline from './Timeline';
 import Experience from './Experience';
 
 import mockApi from '../mockApi';
-// import Firebase from '../helper/firebase';
 
 class Dashboard extends Component {
   state = { ...mockApi }
-
-  // firebase = new Firebase();
-
-  // componentDidMount() {
-  //   this.firebase.database.on('value', (snapshot) => {
-  //     this.setState({ ...snapshot.val() });
-  //   });
-  // }
 
   render() {
     const {

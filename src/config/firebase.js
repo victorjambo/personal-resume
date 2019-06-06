@@ -1,10 +1,15 @@
-import config from '.';
+import firebase from 'firebase/app';
 
-export default {
-  apiKey: config.API_KEY,
-  authDomain: config.AUTH_DOMAIN,
-  databaseURL: config.DATABASE_URL,
-  projectId: config.PROJECT_ID,
-  storageBucket: config.STORAGE_BUCKET,
-  messagingSenderId: config.MESSAGING_SENDER_ID
+const config = {
+  apiKey: 'AIzaSyBmEKmKa4d2m_aqya8nH_45FkdQqb7-KQI',
+  authDomain: 'personal-resume-f81c4.firebaseapp.com',
+  databaseURL: 'https://personal-resume-f81c4.firebaseio.com',
+  projectId: 'personal-resume-f81c4',
+  storageBucket: 'personal-resume-f81c4.appspot.com',
+  messagingSenderId: '1005730961132',
+  appId: '1:1005730961132:web:8cae6f664ed66144'
 };
+
+firebase.initializeApp(config);
+
+export default firebase;
