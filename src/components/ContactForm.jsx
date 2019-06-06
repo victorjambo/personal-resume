@@ -17,11 +17,11 @@ class ContactForm extends React.Component {
     e.preventDefault();
 
     const sendMail = firebase.functions().httpsCallable('sendMail');
-    const contactUs = firebase.database.ref.child('contactUs');
+    const contactUs = firebase.database().ref().child('contactUs');
     contactUs.push(this.state).then(() => {
       this.setState({ ...this.initialState });
-      sendMail().then(result => console.log(result.data.text));
       toast.success('Message Sent');
+      sendMail().then(res => console.log(res));
     });
   };
 
