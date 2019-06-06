@@ -29,9 +29,17 @@ exports.sendMail = functions.https.onRequest((req, res) => {
 
     return transporter.sendMail(mailOptions, (error, info) => {
         if(error){
+            console.error(error.toString());
             return res.send(error.toString());
         }
+        console.log('Successful');
         return res.send('Email Sent');
     });
   });
 });
+
+// exports.dbCharge = functions.firestore.document('/contactUs')
+//     .onWrite((doc, context) => {
+//         console.log("Victor Mutai");
+//         const payment = doc.after.data();
+// });
