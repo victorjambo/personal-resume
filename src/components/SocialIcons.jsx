@@ -13,7 +13,7 @@ const SocialIcons = props => (
     </li>
     <li>
       <a
-        href="https://twitter.com/victorjambo/"
+        href="https://twitter.com/victor_jambo/"
         target="_blank"
         rel="noopener noreferrer"
       >
