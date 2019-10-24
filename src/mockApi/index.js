@@ -66,7 +66,7 @@ export default {
     pic:
       'https://firebasestorage.googleapis.com/v0/b/personal-resume-f81c4.appspot.com/o/ppic-min.jpg?alt=media&token=0b0388df-9864-4e8b-ade0-2a65f07cc2a3',
     address: 'Nairobi, Kenya',
-    email: 'victor.mutai@andela.com',
+    email: 'victormutaijambo@gmail.com',
     phone: '+254 729 021 209',
     title: 'Software Engineer',
     name: 'Victor Mutai',
@@ -76,9 +76,20 @@ export default {
   stories: {
     experiences: [
       {
+        id: 5,
+        title: 'Software Engineer',
+        timeline: 'Jun 2019 – Present • 5 mos',
+        company: 'Prezi',
+        description: `Full-stack web development
+        <ul>
+        <li>Python/Django for backend development.</li>
+        <li>React/Typescript/Javascript/Redux for frontend development.</li>
+        <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
+      },
+      {
         id: 4,
         title: 'Software Engineer',
-        timeline: 'May 2018 – Present • 11 mos',
+        timeline: 'May 2018 – Present • 1yrs 6 mos',
         company: 'Andela',
         description:
           "Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires."
