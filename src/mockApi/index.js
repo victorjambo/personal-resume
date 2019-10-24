@@ -75,17 +75,17 @@ export default {
   },
   stories: {
     experiences: [
-      {
-        id: 5,
-        title: 'Software Engineer',
-        timeline: 'Jun 2019 – Present • 5 mos',
-        company: 'Prezi',
-        description: `Full-stack web development
-        <ul>
-        <li>Python/Django for backend development.</li>
-        <li>React/Typescript/Javascript/Redux for frontend development.</li>
-        <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
-      },
+      // {
+      //   id: 5,
+      //   title: 'Software Engineer',
+      //   timeline: 'Jun 2019 – Present • 5 mos',
+      //   company: 'Prezi',
+      //   description: `Full-stack web development
+      //   <ul>
+      //   <li>Python/Django for backend development.</li>
+      //   <li>React/Typescript/Javascript/Redux for frontend development.</li>
+      //   <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
+      // },
       {
         id: 4,
         title: 'Software Engineer',
