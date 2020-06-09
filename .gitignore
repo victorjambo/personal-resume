@@ -30,3 +30,5 @@ yarn-error.log*
 .firebase
 **/.runtimeconfig.json
 src/helper/firebase.js
+**.log
+key.json
