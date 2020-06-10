@@ -53,7 +53,7 @@ const Footer = ({ userInfo }) => (
                     </div>
                   </div>
                 </div>
-                <div className="col-sm-12 xs-no-padding">
+                {/* <div className="col-sm-12 xs-no-padding">
                   <div
                     className="mh-address-footer-item media dark-bg shadow-1 wow fadeInUp"
                     data-wow-duration="0.8s"
@@ -67,7 +67,7 @@ const Footer = ({ userInfo }) => (
                       <a href={`callto:${userInfo.email}`}>{userInfo.phone}</a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <ContactForm />
               <div

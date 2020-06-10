@@ -2,7 +2,7 @@ import React from 'react';
 
 const SocialIcons = props => (
   <ul {...props}>
-    <li>
+    {/* <li>
       <a
         href="https://facebook.com/victor_jambo/"
         target="_blank"
@@ -19,7 +19,7 @@ const SocialIcons = props => (
       >
         <i className="fa fa-twitter" />
       </a>
-    </li>
+    </li> */}
     <li>
       <a
         href="https://github.com/victorjambo/"

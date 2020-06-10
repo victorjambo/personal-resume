@@ -48,14 +48,14 @@ const Home = ({ userInfo }) => (
                     {userInfo.email}
                   </a>
                 </li>
-                <li
+                {/* <li
                   className="wow fadeInUp"
                   data-wow-duration="0.8s"
                   data-wow-delay="0.5s"
                 >
                   <i className="fa fa-phone" />
                   <a href="callto:">{userInfo.phone}</a>
-                </li>
+                </li> */}
                 <li
                   className="wow fadeInUp"
                   data-wow-duration="0.8s"

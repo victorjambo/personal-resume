@@ -7,7 +7,7 @@ import Footer from '../common/Footer';
 import Home from './Home';
 import About from './About/About';
 import Service from './About/Service';
-import Skills from './Skills';
+// import Skills from './Skills';
 import Timeline from './Timeline';
 import Experience from './Experience';
 
@@ -18,7 +18,7 @@ class Dashboard extends Component {
 
   render() {
     const {
-      frameworks, softSkills, stacks, stories, technicalSkills, userInfo
+      frameworks, stacks, stories, userInfo
     } = this.state;
     return (
       <BreakpointProvider>
@@ -27,7 +27,7 @@ class Dashboard extends Component {
         <Home userInfo={userInfo} />
         <About userInfo={userInfo} frameworks={frameworks} />
         <Service stacks={stacks} />
-        <Skills technicalSkills={technicalSkills} softSkills={softSkills} />
+        {/* <Skills technicalSkills={technicalSkills} softSkills={softSkills} /> */}
         <Breakpoint small down><Experience stories={stories} /></Breakpoint>
         <Breakpoint medium up><Timeline stories={stories} /></Breakpoint>
         {/* <Portfolio /> */}

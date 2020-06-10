@@ -44,7 +44,7 @@ export default {
       level: 55
     }
   ],
-  frameworks: ['Python', 'Django', 'Flask', 'HTML', 'CSS', 'ReactJS', 'Vanilla JS'],
+  frameworks: ['Python', 'Django', 'Flask', 'HTML', 'CSS', 'ReactJS', 'VanillaJS', 'React Native'],
   stacks: [
     {
       id: 1,
@@ -67,7 +67,7 @@ export default {
       'https://firebasestorage.googleapis.com/v0/b/personal-resume-f81c4.appspot.com/o/ppic-min.jpg?alt=media&token=0b0388df-9864-4e8b-ade0-2a65f07cc2a3',
     address: 'Nairobi, Kenya',
     email: 'victormutaijambo@gmail.com',
-    phone: '+254 729 021 209',
+    phone: '+254 72X XXX XXX',
     title: 'Software Engineer',
     name: 'Victor Mutai',
     bio:
@@ -75,21 +75,33 @@ export default {
   },
   stories: {
     experiences: [
-      // {
-      //   id: 5,
-      //   title: 'Software Engineer',
-      //   timeline: 'Jun 2019 – Present • 5 mos',
-      //   company: 'Prezi',
-      //   description: `Full-stack web development
-      //   <ul>
-      //   <li>Python/Django for backend development.</li>
-      //   <li>React/Typescript/Javascript/Redux for frontend development.</li>
-      //   <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
-      // },
+      {
+        id: 6,
+        title: 'Software Engineer',
+        timeline: 'Jun 2019 – Jun 2020 • 1yr',
+        company: 'Prezi',
+        description: `Full-stack web development
+        <ul>
+        <li>React/Typescript/Javascript/Redux for frontend development.</li>
+        <li>Python/Django for backend development.</li>
+        <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
+      },
+      {
+        id: 5,
+        title: 'Fronend Technical Lead',
+        timeline: 'Dec 2018 - Jun 2019 • 5 mos',
+        company: 'Andela - Hall of fame',
+        description: `Responsibilities;
+        <ul>
+        <li>Deliver world-class technology for our React-based websites and Node. js services and libraries.</li>
+        <li>Help mentor and foster technical and professional development of the team</li>
+        <li>Own the technical stack and architecture for the web team</li>
+        </ul>`
+      },
       {
         id: 4,
         title: 'Software Engineer',
-        timeline: 'May 2018 – Present • 1yrs 6 mos',
+        timeline: 'May 2018 – Present • 2yrs 2 mos',
         company: 'Andela',
         description:
           "Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires."
