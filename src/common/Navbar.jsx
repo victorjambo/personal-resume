@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
   state = {
@@ -76,6 +77,11 @@ class Navbar extends React.Component {
                     <a className="nav-link" href="#mh-contact">
                       Contact
                     </a>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link wip" to="/v2">
+                      WorkInProgress
+                    </Link>
                   </li>
                 </ul>
               </div>
