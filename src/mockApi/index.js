@@ -71,24 +71,45 @@ export default {
     title: 'Software Engineer',
     name: 'Victor Mutai',
     bio:
-      'Victor Mutai is a self-motivated and goal oriented individual with the ability to follow through with projects from inception to completion using analytical and problem-solving skills.'
+      'Victor Mutai is a software engineer whose mission is to help companies solve their complex problems in the simplest way possible in various business areas. I care about clean, robust code and use agile techniques to deliver tested and high-quality solutions. I enjoy venturing into the unknown and providing companies with the edge they need with software.'
   },
   stories: {
     experiences: [
       {
         id: 6,
         title: 'Software Engineer',
-        timeline: 'Jun 2019 – Jun 2020 • 1yr',
-        company: 'Prezi',
-        description: `Full-stack web development
+        timeline: 'May 2018 – Present • 2yrs 5 mos',
+        company: 'Andela',
+        description: `
         <ul>
-        <li>React/Typescript/Javascript/Redux for frontend development.</li>
-        <li>Python/Django for backend development.</li>
-        <li>AWS/Genesis/Kubernetes for service management and configuration.</li></ul>`
+        <li>Assumed the role of Frontend technical team lead for our internal social media platform.</li>
+        <li>Responsible for design and implement frontend features with ReactJS.</li>
+        <li>Collaborating with peers and stakeholders in a fast-paced distributed team.</li>
+        <li>Mentor, onboard junior engineers, code reviews, and plan and delegate assignments.</li>
+        <li>Design of a backend REST API with Python Flask.</li>
+        <li>Screen candidates and conducting technical interviews.</li>
+        </ul><br />
+        <p><i>Skills;</i> JavaScript/ES6, ReactJS, Redux, Postgres, Sass, Nodejs, ExpressJS, Python/Flask, Python/Django, Jest and Enzyme.</p>`
       },
       {
         id: 5,
-        title: 'Fronend Technical Lead',
+        title: 'Software Engineer',
+        timeline: 'Jun 2019 – Jun 2020 • 1yr',
+        company: 'Prezi',
+        description: `Full stack developer focusing on Django microservices on a variety of projects including;<br />
+        <ul>
+        <li>Setup and configuration of React into a Django app with Webpack, and AWS (EC2, S3, DynamoDB, Kibana).</li>
+        <li>Django CMS including custom plugin creation.</li>
+        <li>Continuous integration with Jenkins Automated acceptance testing using Capybara, jQuery and less for frontend work</li>
+        <li>Creating internal APIs.</li>
+        <li>Integrating with 3rd party APIs including, Zuora, AllPago, Braintree, Kount, Paypal and SalesForce.</li>
+        <li>Migration on payments and subscriptions data of hundreds of thousands of users between two major subscription-management service providers.</li>
+        <li>Adjusting Payment flows to accommodate new experiments with A/B tests.</li>
+        </ul>`
+      },
+      {
+        id: 4,
+        title: 'Frontend Technical Lead',
         timeline: 'Dec 2018 - Jun 2019 • 5 mos',
         company: 'Andela - Hall of fame',
         description: `Responsibilities;
@@ -99,36 +120,29 @@ export default {
         </ul>`
       },
       {
-        id: 4,
-        title: 'Software Engineer',
-        timeline: 'May 2018 – Present • 2yrs 2 mos',
-        company: 'Andela',
-        description:
-          "Andela provides companies with access to the top 1% of global tech talent. We identify high-potential developers on the African continent, shape them into world-class technical leaders, and pair them with companies as full-time, distributed team members. This allows Andela's partners, which range from startups to Fortune 500s, to accelerate their product roadmaps while minimizing time spent interviewing, onboarding, and training new hires."
-      },
-      {
         id: 3,
         title: 'Data Aggregation Specialist',
         timeline: 'Sep 2015 – Apr 2018 • 2 yrs 8 mos',
-        company: 'Samasource',
-        description: `Worked directly with our outsource client Glassdoor. My main role was to quantify and analyze all jobs data to drive improvements to provide the best jobs experience.
+        company: 'Glassdoor',
+        description: `I helped build and maintain web crawlers, monitor and analyze the overall quality of data collected by web crawlers, and provide technical support for the customer service team.
       <br />
-      Responsibilities;<br />
+      Accomplishments;<br />
       <ul>
-      <li>Streamlining of operational procedures and metrics between Data Aggregation, Customer Success and Sales teams.</li>
-      <li>Data validation & visualization jobs data sets.</li>
-      <li>Liaison with engineering teams on improving the collection and utilization of jobs data.</li>
-      <li>Build new crawling tools in Vanilla JS.</li>
-      <li>Report and fix various bugs in our web crawlers.</li>
+      <li>Created & developed a new automation tool for my team to automate production workflow.</li>
+      <li>Responsible for web crawling jobs from companies' career page source(HTML/CSS), job boards or ATS using custom XPaths & Regex.</li>
+      <li>Automated employers career site & tested their web elements functionality.</li>
+      <li>Debugging faulty or error import configurations.</li>
+      <li>Tracking bugs with JIRA agile environment for client-related issues.</li>
+      <li>Reviewed errors detected by Glassdoor's automated system & escalated issues proactively.</li>
+      <li>Worked with a fast-paced team to handle a high volume of requests on time.</li>
+      <li>Monitored existing job content & determined if job data is being pulled correctly.</li>
       <li>Provide technical support for sales and customer success.</li>
-      <li>Evaluate and improve internal error detection.</li>
-      <li>Monitor and analyze the overall health of jobs data.</li>
       </ul>`
       },
       {
         id: 2,
-        title: 'Ruby On Rail Developer',
-        timeline: 'Dec 2016 – Dec 2017 • 1 yr',
+        title: 'Web Developer',
+        timeline: 'Dec 2016 – Dec 2017 • 1 yr • Contract',
         company: 'Upwork',
         description: `Responsibilities <br />
       <ul>
